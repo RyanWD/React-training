@@ -1,0 +1,46 @@
+// Misc 
+
+*declartive" what should be done? // react 
+*imperative* how should it be done? // vanilla JS is this.
+
+// Vanilla JS
+
+let practice = document.getElementById('root')
+
+let h1 = document.createElement('h1')
+h1.classList.add('header')
+h1.textContent = "I'm a header"
+practice.append(h1)
+
+// JSX 
+
+const element = <h1 className="header">test</h1>
+
+console.log(element)
+
+returns javascript object
+
+{
+    "type": "h1",
+    "key": null,
+    "ref": null,
+    "props": {
+        "className": "header",
+        "children": "test"
+    },
+    "_owner": null,
+    "_store": {}
+}
+
+
+
+in react class = className
+
+ReactDOM.render(
+<div>
+    <h1 className="header">Hello<h1/>
+</div>, document.querySelector('#root'))
+
+the first argument of the above only accepts one 'parent' element
+so you could have multiple elements, but would need to be wrapped in a div.
+ 
